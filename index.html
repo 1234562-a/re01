@@ -1,41 +1,194 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>康文昌的在线HTML 教学小工具</title>
-    <style>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML
+    </title>
+    <style>
       body {
         margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+                border: 1px solid black;
+              } */
+      .yinYing {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        display: flex;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 2px solid #96e6a1;
+        font-size: 14px;
+        color: #666;
+        width: 160px;
+        height: 45px;
+        font-size: 15px;
+      }
+      .box {
+        flex-direction: column;
+      }
+      .vertical-text {
+        -webkit-writing-mode: vertical-lr;
+        -moz-writing-mode: vertical-lr;
+        -o-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        -webkit-text-orientation: sideways-right;
       }
     </style>
   </head>
-  <body>
-    <div style="
-      background-color:#f1f1f1;
-      text-align:center;
-      padding:40px;
-     ">
-      <img src="https://kangwenchang.com/logo.png" alt"康文昌" width="80px" height="80px">
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="baise yinYing box">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 3px solid #45b07a;
+          width: 180px;
+          height: 40px;
+        "
+        class="flex"
+      >
+        <img
+          src="https://s21.ax1x.com/2025/02/12/pEuNR2R.png"
+          width="80px"
+          height="60px"
+          alt=""
+        />
+        <div style="margin-left: 10px; margin-top: 5px" class="vertical-text">
+          ᠥᠪᠥᠷ ᠮᠣᠩᠭᠣᠯ
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+      </div>
     </div>
-    <div style="
-      max-width:700px;
-      margin:30px auto;
-      padding:15px;
-      line-height:1.7；
-    ">
-      <h1>你好，世界，我叫范德鹏</h1>
-      <h1>nice to meet you</h1>
-      <h1>I like you,I like this world</h1> 
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div style="height: 60px" class="baise yinYing">
+        <!-- 背景 -->
+        <div style="z-index: 1">
+          <img
+            src="https://s21.ax1x.com/2025/02/11/pEnWXIs.jpg"
+            width="1350px"
+            height="60px"
+          />
+          <h1
+            style="
+              position: absolute;
+              top: 5px;
+              margin-top: 1px;
+              left: 520px;
+              z-index: 3;
+              font-size: 40px;
+              height: 60px;
+              font-family: 华文新魏;
+              background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+              background-clip: text;
+              color: transparent;
+            "
+          >
+            我美丽的家乡内蒙古
+          </h1>
+          <h1
+            style="
+              position: absolute;
+              top: 5px;
+              margin-top: 1px;
+              left: 860px;
+              z-index: 3;
+              font-size: 30px;
+              height: 60px;
+              font-family: 华文新魏;
+              background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+              background-clip: text;
+              color: transparent;
+            "
+            class="vertical-text"
+          >
+            ᠦᠵᠡᠰᠬᠦᠯᠡᠩᠲᠦ ᠰᠠᠶᠢᠬᠠᠨ ᠨᠤᠲᠤᠭ ᠥᠪᠥᠷ ᠮᠣᠩᠭᠤᠯ
+          </h1>
+          <div
+            style="
+              position: absolute;
+              top: 1px;
+              margin-top: 0 1px;
+              left: 1050px;
+              font-size: 40px;
+            "
+          >
+            <img
+              src="https://s21.ax1x.com/2025/02/12/pEuN1Df.png"
+              ;
+              height="70px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex">
+            <!-- 数据块-->
+            <div style="height: 100px" class="flex1 baise mgr8 yinYing"><img src="https://s21.ax1x.com/2025/03/21/pE0Qt3t.jpg" height="100px" width="242.63px" /></div>
+            <div style="height: 100px" class="flex1 baise mgr8 yinYing"><img src="https://s21.ax1x.com/2025/03/21/pE0QwDS.jpg" height="100px" width="242.63px" /></div>
+            <div style="height: 100px" class="flex1 baise mgr8 yinYing"><img src="https://s21.ax1x.com/2025/03/21/pE0Q6Cn.jpg" height="100px" width="242.63px" /></div>
+            <div style="height: 100px" class="flex1 baise mgr8 yinYing"><img src="https://s21.ax1x.com/2025/03/21/pE0Mzpq.jpg" height="100px" width="242.63px" /></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div style="height: 160px" class="baise mgt8 yinYing"></div>
+            <div style="height: 160px" class="baise mgt8 yinYing"></div>
+            <div style="height: 160px" class="baise mgt8 yinYing"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="baise yinYing"></div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="baise mgt8 yinYing"></div>
+        </div>
+      </div>
     </div>
-    <div style="
-      background-color:#f1f1f1;
-      text-align:center;
-      padding:40px;
-      font-size:12px;
-     ">
-      <p>我的网站</p>
-      <a href="https://kangwenchang.com/">友情链接</a>
-     </div>
   </body>
 </html>
